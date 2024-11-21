@@ -1,0 +1,42 @@
+{
+  "name": "webdriverio-browserstack",
+  "version": "1.0.1",
+  "readme": "WendriverIO Integration with [BrowserStack](https://www.browserstack.com)",
+  "description": "Selenium examples for WebdriverIO and BrowserStack Automate",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio conf/base.conf.js",
+    "mobile": "./node_modules/.bin/wdio conf/mobile.js",
+    "local": "./node_modules/.bin/wdio conf/local-test.conf.js",
+    "medalia": "./node_modules/.bin/wdio conf/medalia.conf.js",
+    "percy-test": "percy exec -v -- wdio conf/base.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browserstack/webdriverio-browserstack.git"
+  },
+  "keywords": [
+    "webdriverio",
+    "browserstack",
+    "selenium",
+    "tests"
+  ],
+  "bugs": {
+    "url": "https://github.com/browserstack/webdriverio-browserstack/issues"
+  },
+  "homepage": "https://github.com/browserstack/webdriverio-browserstack#readme",
+  "dependencies": {
+    "@percy/cli": "^1.28.7",
+    "@percy/selenium-webdriver": "^2.1.0",
+    "@percy/webdriverio": "^3.1.1",
+    "@wdio/cli": "7.27.0",
+    "@wdio/cucumber-framework": "7.27.0",
+    "chai": "^4.3.6",
+    "webdriverio": "7.27.0"
+  },
+  "devDependencies": {
+    "@wdio/browserstack-service": "7.27.0",
+    "@wdio/local-runner": "7.27.0",
+    "@wdio/mocha-framework": "7.20.3",
+    "wdio-safaridriver-service": "^2.1.1"
+  }
+}
